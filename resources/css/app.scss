@@ -1,0 +1,64 @@
+$dark-blue:#42628a;
+$light-brown: #A8947D;
+$brand-whatsapp-color: #25D366;
+
+$theme-colors: ("primary": $dark-blue,
+    "secondary" : $light-brown,
+    "success" : $brand-whatsapp-color,
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
+
+a {
+    text-decoration: none;
+    color: white !important;
+}
+
+h2 {
+    border-bottom: 4px solid $light-brown;
+}
+
+nav {
+    .navbar-nav {
+        li {
+            a {
+                color: $light-brown !important;
+                font-weight: bold;
+            }
+
+            a:hover {
+                color: white !important;
+            }
+        }
+
+        .active a {
+            color: white !important;
+        }
+    }
+}
+
+section {
+    height: 90vh;
+
+    .content{
+        height: 90vh; 
+        align-items: center;
+    }
+}
+
+section#company-profile {
+    a {
+        background-color: $brand-whatsapp-color;
+        color: white !important;
+    }
+
+    h1 {
+        color: $light-brown !important;
+    }
+
+    p {
+        color: white !important;
+    }
+}
